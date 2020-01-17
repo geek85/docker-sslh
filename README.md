@@ -69,6 +69,7 @@ services:
       HTTPS_PORT: 443
       SSH_HOST: 172.17.0.1 # Point to the Docker Host's IP
       SSH_PORT: 22
+      TRANSPARENT: false
     depends_on:
       - web
 ```
