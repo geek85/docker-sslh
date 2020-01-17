@@ -32,7 +32,7 @@ LABEL org.label-schema.build-date=${BUILD_DATE} \
 
 COPY --from=builder /build/sslh-select /sslh
 
-RUN apk --no-cache add libconfig libcap pcre && adduser -D -g '' sslh
+RUN apk --no-cache add libconfig libcap pcre && adduser -D -g '' -u 2443 sslh
 
 COPY entry.sh /usr/local/bin/entry.sh
 
