@@ -1,4 +1,4 @@
-DOCKER_REPO=tnwhitwell/docker-sslh
+DOCKER_REPO=minikea/docker-sslh
 IMAGE_NAME=${DOCKER_REPO}:latest
 
 build:
